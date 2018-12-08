@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "AoC",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"header",
+		"nodesCount",
+		"metaData",
+		"nodes"
+	],
+	"name" : "P2018D8Node",
+	"type" : "normal"
+}
