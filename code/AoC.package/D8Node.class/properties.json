@@ -1,13 +1,16 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "AoC",
+	"category" : "AoC-2018",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"ws"
+		"header",
+		"nodesCount",
+		"metaData",
+		"nodes"
 	],
-	"name" : "P2018D7Workers",
+	"name" : "D8Node",
 	"type" : "normal"
 }

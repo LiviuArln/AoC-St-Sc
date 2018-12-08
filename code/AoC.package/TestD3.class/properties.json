@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "AoC",
+	"category" : "AoC-2018",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AoC2018D3",
+	"name" : "TestD3",
 	"type" : "normal"
 }

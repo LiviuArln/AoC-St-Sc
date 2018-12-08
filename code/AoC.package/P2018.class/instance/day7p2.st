@@ -137,7 +137,7 @@ Step G must be finished before step C can begin.'.
 				ifFalse: [ mx > my ] ].
 	visited := OrderedCollection new.
 	stepDurations := nodes collect: [ :s | s -> (s first asciiValue - $A asciiValue + 1) ].
-	workers := P2018D7Workers new.
+	workers := D7Workers new.
 	[ toVisit isEmpty ]
 		whileFalse: [ | next |
 			dependencies := dependencies reject: [ :a | toVisit includes: a head ].
