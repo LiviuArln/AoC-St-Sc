@@ -1,9 +1,9 @@
 as yet unclassified
-day8p2
+day08p2
 	| data nodeStack completedNodes firstNode |
-	data := (self day8puzzles second splitOn: $ ) collect: #asNumber.
+	data := (self day08_puzzles second splitOn: $ ) collect: #asNumber.
 	nodeStack := Stack new.
-	firstNode := D8Node new.
+	firstNode := D08Node new.
 	nodeStack push: firstNode.
 	completedNodes := OrderedCollection new.
 	data
@@ -12,7 +12,7 @@ day8p2
 			[ nodeStack isNotEmpty and: [ nodeStack top expectingChild | nodeStack top complete ] ]
 				whileTrue: [ nodeStack top expectingChild
 						ifTrue: [ | newNode |
-							newNode := D8Node new.
+							newNode := D08Node new.
 							nodeStack top nodeCreated: newNode.
 							nodeStack push: newNode ]
 						ifFalse: [ completedNodes add: nodeStack pop ] ] ].

@@ -1,5 +1,5 @@
 as yet unclassified
-day4p2
+day04p2
 | puzzle q1 q2 |
 puzzle := '[1518-10-03 00:47] falls asleep
 [1518-07-26 23:50] Guard #487 begins shift

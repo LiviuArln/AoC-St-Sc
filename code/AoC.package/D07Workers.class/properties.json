@@ -6,11 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"header",
-		"nodesCount",
-		"metaData",
-		"nodes"
+		"ws"
 	],
-	"name" : "D8Node",
+	"name" : "D07Workers",
 	"type" : "normal"
 }

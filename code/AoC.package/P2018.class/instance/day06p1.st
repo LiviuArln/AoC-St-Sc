@@ -1,7 +1,7 @@
 as yet unclassified
-day6p1
+day06p1
 	| coordinates distances allXY grid infinity xx |
-	coordinates := self day6puzzles first lines
+	coordinates := self day06_puzzles first lines
 		collect: [ :l | 
 			| s |
 			s := $, split: l.

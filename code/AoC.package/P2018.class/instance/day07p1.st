@@ -1,5 +1,5 @@
 as yet unclassified
-day7p1
+day07p1
 | puzzle pattern inverseLinks nodes dependencies toVisit visited puzzleSmall |
 puzzleSmall := 'Step C must be finished before step A can begin.
 Step C must be finished before step F can begin.

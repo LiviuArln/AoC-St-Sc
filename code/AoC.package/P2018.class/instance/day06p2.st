@@ -1,7 +1,7 @@
 as yet unclassified
-day6p2
+day06p2
 	| coordinates gridTopLeft gridBottomRight distances |
-	coordinates := self day6puzzles first lines
+	coordinates := self day06_puzzles first lines
 		collect: [ :l | 
 			| s |
 			s := $, split: l.

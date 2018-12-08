@@ -1,5 +1,5 @@
 as yet unclassified
-day7p2
+day07p2
 	| puzzleSmall puzzle pattern inverseLinks nodes ealiestFinish dependencies dependenciesCopy toVisit visited stepDurations workers currentDependenciesTimes |
 	puzzleSmall := 'Step C must be finished before step A can begin.
 Step C must be finished before step F can begin.
@@ -137,7 +137,7 @@ Step G must be finished before step C can begin.'.
 				ifFalse: [ mx > my ] ].
 	visited := OrderedCollection new.
 	stepDurations := nodes collect: [ :s | s -> (s first asciiValue - $A asciiValue + 1) ].
-	workers := D7Workers new.
+	workers := D07Workers new.
 	[ toVisit isEmpty ]
 		whileFalse: [ | next |
 			dependencies := dependencies reject: [ :a | toVisit includes: a head ].

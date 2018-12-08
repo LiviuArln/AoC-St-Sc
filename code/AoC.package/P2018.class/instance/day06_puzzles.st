@@ -1,5 +1,5 @@
 as yet unclassified
-day6puzzles
+day06_puzzles
 	^ {'1, 1
 1, 6
 8, 3
