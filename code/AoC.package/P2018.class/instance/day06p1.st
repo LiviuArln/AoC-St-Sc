@@ -30,8 +30,7 @@ day06p1
 		collect: [ :y | 
 			infinity addAll: (distances at: grid top @ y) value.
 			infinity addAll: (distances at: grid bottom @ y) value ].
-	xx := (distances associations select: [ :a | a tail value size = 1 ] thenCollect: [ :a | a head -> a tail value anyOne ])  
-		reject: [ :a | self halt.infinity includes: a value ].
-	
-	^infinity includes: 1@1
-		
+	xx := (distances associations select: [ :a | a tail value size = 1 ] thenCollect: [ :a | a head -> a tail value anyOne ])
+		reject: [ :a | 
+			infinity includes: a value ].
+	^ infinity includes: 1 @ 1
