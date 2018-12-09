@@ -8,16 +8,16 @@ day07p1
 				ifTrue: [ (pattern subexpression: 3) -> (pattern subexpression: 2) ] ].
 	nodes := (inverseLinks
 		flatCollect: [ :a | 
-			{a head.
+			{a key.
 			a value} ]) asSet.
-	dependencies := nodes collect: [ :n | n -> (inverseLinks select: [ :l | l head = n ] thenCollect: #value) ].
-	toVisit := (dependencies select: [ :a | a value size = 0 ] thenCollect: #head) asSortedCollection.
+	dependencies := nodes collect: [ :n | n -> (inverseLinks select: [ :l | l key = n ] thenCollect: #value) ].
+	toVisit := (dependencies select: [ :a | a value size = 0 ] thenCollect: #key) asSortedCollection.
 	visited := OrderedCollection new.
 	[ toVisit isEmpty ]
 		whileFalse: [ | next |
-			dependencies := dependencies reject: [ :a | toVisit includes: a head ].
+			dependencies := dependencies reject: [ :a | toVisit includes: a key ].
 			next := toVisit removeFirst.
 			visited addLast: next.
-			dependencies := dependencies collect: [ :a | a head -> (a value reject: [ :n | n = next ]) ].
-			(dependencies select: [ :a | a value size = 0 ] thenCollect: #head) do: [ :n | toVisit add: n ] ].
+			dependencies := dependencies collect: [ :a | a key -> (a value reject: [ :n | n = next ]) ].
+			(dependencies select: [ :a | a value size = 0 ] thenCollect: #key) do: [ :n | toVisit add: n ] ].
 	^ visited joinUsing: ''

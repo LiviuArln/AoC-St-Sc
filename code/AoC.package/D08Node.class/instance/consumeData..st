@@ -2,6 +2,6 @@ as yet unclassified
 consumeData: aNumber
 	self headerComplete
 		ifTrue: [ metaData add: aNumber ]
-		ifFalse: [ header head = -1
+		ifFalse: [ header key = -1
 				ifTrue: [ header := aNumber -> -1 ]
-				ifFalse: [ header := header head -> aNumber ] ]
+				ifFalse: [ header := header key -> aNumber ] ]

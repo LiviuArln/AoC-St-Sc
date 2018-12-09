@@ -1,7 +1,7 @@
 as yet unclassified
 nodeSum
 	| nodesValues |
-	header head = 0
+	header key = 0
 		ifTrue: [ ^ metaData sum ].
 		nodesValues :=(metaData
 		collect: [ :m | 

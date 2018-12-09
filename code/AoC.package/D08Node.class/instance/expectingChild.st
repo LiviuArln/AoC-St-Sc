@@ -1,3 +1,3 @@
 as yet unclassified
 expectingChild
-	^ self headerComplete & (nodesCount = header head) not
+	^ self headerComplete & (nodesCount = header key) not
