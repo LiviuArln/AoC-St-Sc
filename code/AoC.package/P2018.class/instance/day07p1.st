@@ -11,7 +11,7 @@ day07p1
 			{a key.
 			a value} ]) asSet.
 	dependencies := nodes collect: [ :n | n -> (inverseLinks select: [ :l | l key = n ] thenCollect: #value) ].
-	toVisit := (dependencies select: [ :a | a value size = 0 ] thenCollect: #key) asSortedCollection.
+	toVisit := (dependencies select: [ :a | a value isEmpty  ] thenCollect: #key) asSortedCollection.
 	visited := OrderedCollection new.
 	[ toVisit isEmpty ]
 		whileFalse: [ | next |
@@ -19,5 +19,5 @@ day07p1
 			next := toVisit removeFirst.
 			visited addLast: next.
 			dependencies := dependencies collect: [ :a | a key -> (a value reject: [ :n | n = next ]) ].
-			(dependencies select: [ :a | a value size = 0 ] thenCollect: #key) do: [ :n | toVisit add: n ] ].
+			(dependencies select: [ :a | a value isEmpty ] thenCollect: #key) do: [ :n | toVisit add: n ] ].
 	^ visited joinUsing: ''
