@@ -1,7 +1,7 @@
 as yet unclassified
 day11p
 	| serial maxValue maxCoordinates lastCalculations |
-	serial := 42.
+	serial := 4455.
 	lastCalculations := Dictionary new.
 	maxValue := 0.
 	0 to: 2 do: [ :n | 
@@ -14,6 +14,6 @@ day11p
 				value := smallerSquareValue + (bleedigMargin collect: [ :p | self day11_powerLevel: serial at: x @ y + p ]) sum.
 				value > maxValue
 					ifTrue: [ maxValue := value.
-						maxCoordinates := x @ y -> n ].
+						maxCoordinates := x @ y -> (n + 1) ].
 				lastCalculations at: x @ y put: value ] ] ].
 	^ maxCoordinates
