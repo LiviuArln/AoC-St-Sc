@@ -1,0 +1,13 @@
+plugins {
+    id 'scala'
+	id 'eclipse'
+}
+
+repositories{
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+	compile "org.scalaj:scalaj-http_2.12:2.3.0"
+}
