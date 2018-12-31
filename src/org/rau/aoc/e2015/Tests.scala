@@ -51,4 +51,5 @@ class Tests {
     assertFalse(D5.Rules2.satifies("ieodomkazucvgmuy"))
     assertEquals(69, D5.solution2)
   }
+
 }

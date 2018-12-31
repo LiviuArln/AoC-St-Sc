@@ -12,4 +12,12 @@ class LongRunningTests {
   def testD4_2 {
     assertEquals(9958218, D4.solution2)
   }
+  @Test
+  def testD6_1 {
+    assertEquals(400410, D6.solution1)
+  }
+  @Test
+  def testD6_2 {
+    assertEquals(15343601, D6.solution2)
+  }
 }
