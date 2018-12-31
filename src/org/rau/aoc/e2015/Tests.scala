@@ -31,4 +31,24 @@ class Tests {
   def testD2_2 {
     assertEquals(3812909, D2.solution2)
   }
+  @Test
+  def testD3_1 {
+    assertEquals(2081, D3.solution1)
+  }
+  @Test
+  def testD3_2 {
+    assertEquals(2341, D3.solution2)
+  }
+  @Test
+  def testD5_1 {
+    assertEquals(238, D5.solution1)
+  }
+  @Test
+  def testD5_2 {
+    assertTrue(D5.Rules2.satifies("qjhvhtzxzqqjkmpb"))
+    assertTrue(D5.Rules2.satifies("xxyxx"))
+    assertFalse(D5.Rules2.satifies("uurcxstgmygtbstg"))
+    assertFalse(D5.Rules2.satifies("ieodomkazucvgmuy"))
+    assertEquals(69, D5.solution2)
+  }
 }
