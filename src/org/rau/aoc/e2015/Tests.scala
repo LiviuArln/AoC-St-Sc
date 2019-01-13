@@ -52,4 +52,21 @@ class Tests {
     assertEquals(69, D5.solution2)
   }
 
+  @Test
+  def testD7_1 {
+    assertEquals(46065, D7.solution1)
+  }
+  @Test
+  def testD7_2 {
+    assertEquals(14134, D7.solution2)
+  }
+
+  @Test
+  def testD8_1 {
+    assertEquals(1342, D8.solution1)
+  }
+  @Test
+  def testD8_2 {
+    assertEquals(2074, D8.solution2)
+  }
 }
